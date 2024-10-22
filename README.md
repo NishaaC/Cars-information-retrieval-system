@@ -1,1 +1,1 @@
-# Cars-information-retrieval-system
+This repository contains a simple web-based Car Information Retrieval System built using the Django Framework. The system allows users to search for cars and retrieve relevant information from a collection of car documents. It utilizes a Vector Space Model (VSM) to rank documents based on the similarity between user queries and the content of the car documents.
