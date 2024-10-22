@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.search-container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1 {
+    color: #333;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #e9ebee;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.results-container {
+    margin-top: 20px;
+}
+
+.result-item {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.car-detail {
+    background-color: rgb(212, 146, 146);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #bdbfc3;
+    text-decoration: none;
+}

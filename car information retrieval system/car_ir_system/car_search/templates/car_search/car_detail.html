@@ -1,0 +1,15 @@
+{% extends 'car_search/base.html' %}
+
+{% block content %}
+<div class="car-detail">
+    <h1>{{ car.title }}</h1>
+    <p>{{ car.content }}</p>
+    {% if car.imdb_rating %}
+    <p>IMDB Rating: {{ car.imdb_rating }}</p>
+    {% endif %}
+    {% if car.document %}
+    <p><a href="{{ car.document.url }}" target="_blank">View Original Document</a></p>
+    {% endif %}
+</div>
+<a href="{% url 'home' %}" class="back-link">Back to Search</a>
+{% endblock %}

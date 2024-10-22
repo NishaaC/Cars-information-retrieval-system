@@ -1,0 +1,17 @@
+{% extends 'car_search/base.html' %}
+
+{% block content %}
+<h1>Search Results for "{{ query }}"</h1>
+<div class="results-container">
+    {% for result in results %}
+    <div class="result-item">
+        <h2><a href="{% url 'car_detail' result.filename %}">{{ result.filename }}</a></h2>
+        <p>Similarity: {{ result.similarity|floatformat:4 }}</p>
+        <p>Preview: {{ result.content }}</p>
+    </div>
+    {% empty %}
+    <p>No results found.</p>
+    {% endfor %}
+</div>
+<a href="{% url 'home' %}" class="back-link">Back to Search</a>
+{% endblock %}
